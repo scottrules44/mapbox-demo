@@ -1,0 +1,15 @@
+settings =
+{
+	iphone =
+	{
+		plist =
+        {
+           --used for user tracking
+		   --NSLocationWhenInUseUsageDescription = "A description of why the app needs access to location services."
+        },
+	},
+    plugins =
+    {
+    	["plugin.mapbox"] = {publisherId = "tech.scotth"},
+    },
+}
