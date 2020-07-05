@@ -10,7 +10,9 @@ local title = display.newText( "Mapbox Plugin", display.contentCenterX, 40, nati
 mapbox.newView({x= display.contentCenterX, y = display.contentCenterY, width = 200, height = 200, listener =    function (e)
         if (e.type == "obj") then
             local mapview =e.obj
-               mapview:setZoom(0)
+               timer.performWithDelay( 1000, function  ()
+                        mapview:setZoom(5)
+                end )
         end
             
     end
